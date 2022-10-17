@@ -1,0 +1,18 @@
+1. 本程序分别实现了不同的测试报告的产生方法
+普通方法：execute_common_way
+HTML方法：HTMLtestreport
+unittestreport方法：unittestreport
+
+2.本程序实现了将json数据写入excel的方法，以及将一个数据写入excel的方法：file_tool
+
+3.本程序实现了从excel读入测试数据，read_test_data_tool
+
+4.本程序使用了两种不同方式实现参数化
+@parameterized.expand(cases)
+和
+from unittestreport import ddt, list_data
+--@list_data(money)
+
+5.注意，测试用例的执行之间有前后关系，因为ATM_MONEY是全局变量，初始化不改变全局变量的值。
+
+
